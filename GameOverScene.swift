@@ -38,7 +38,7 @@ class GameOverScene: SKScene {
     backgroundColor = SKColor.white
     
     // 2
-    let message = won ? "Survived." : "Darkness falls."
+    let message = won ? "Megaman wins!" : "Dr. Wily wins."
     
     // 3
     let label = SKLabelNode(fontNamed: "Chalkduster")
@@ -47,6 +47,7 @@ class GameOverScene: SKScene {
     label.fontColor = SKColor.black
     label.position = CGPoint(x: size.width/2, y: size.height/2)
     addChild(label)
+    
     
     // 4
     run(SKAction.sequence([
